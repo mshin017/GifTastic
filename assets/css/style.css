@@ -1,0 +1,60 @@
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.jumbotron {
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 250px;
+    background-image: url("https://cdn140.picsart.com/239715850048212.png?r1024x1024");
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 90px;
+    text-align: center;
+}
+
+.topic-button {
+    background-color: rgb(103, 139, 103);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Caesar Dressing", cursive;
+    color: white;
+
+    
+}
+
+.buttons {
+    margin-left: 65px;
+}
+
+#animal-form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    padding: 10px;
+    display: inline-block;
+}
+
+p {
+    margin: 10px;
+    padding: 0px 10px 0px 10px ;
+    background-color:rgb(103, 139, 103);
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    font-size: 20px;
+}
