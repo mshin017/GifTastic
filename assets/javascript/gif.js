@@ -9,9 +9,13 @@ $(window).on("load", function(){
 })
 
 function displayButtons() {
+    // target display class element
     $(".display").empty();
+    // loops through current length of topics array
     for (var i = 0; i < topics.length; i++) {
+        // prepares buttons from current array
         var topicButtons = $('<button>').addClass('topic-button').attr("data-animal", topics[i]).text(topics[i]);
+        // appends buttons
         $('.buttons').append(topicButtons);
     }
 }
@@ -21,7 +25,8 @@ function addTopic() {
         var newTopics = $("#animal-input").val().trim();
         topics.push(newTopics);
         $('#animal-input').val("");
-        displayButtons();
+        newTopics = $('<button>').addClass('topic-button').attr("data-animal", newTopics).text(newTopics)
+        $(".buttons").append(newTopics);
     });
 }
 $(document).on("click", ".topic-button", displayGifs);
@@ -31,6 +36,7 @@ $(document).on("click", ".topic-button", displayGifs);
 function displayGifs() {
     var animal = $(this).text();
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+    
 console.log(queryURL);
     $.ajax({
       url: queryURL,
