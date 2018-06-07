@@ -4,7 +4,6 @@ var extraTopics = [];
 
 $(window).on("load", function(){
     displayButtons();
-    playGif();
     addTopic();
 })
 
@@ -66,17 +65,15 @@ console.log(queryURL);
 }
 
 
-function playGif() {
-    $(".gif").on("click", function() {
-        var state = $(this).attr("gif-state")
-        console.log(state);
-        if (state === "still") {
-            $(this).attr("src", $(this).attr("gif-animate"));
-            $(this).attr("gif-state", "animate");
-        }
-        else {
-            $(this).attr("src", $(this).attr("gif-still"));
-            $(this).attr("gif-state", "still");
-        }
-        });
-}
+$(".gif").on("click", function() {
+    var state = $(this).attr("gif-state")
+    console.log(state);
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("gif-animate"));
+        $(this).attr("gif-state", "animate");
+    }
+    else {
+        $(this).attr("src", $(this).attr("gif-still"));
+        $(this).attr("gif-state", "still");
+    }
+    });
