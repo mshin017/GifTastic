@@ -1,2 +1,2 @@
 # GifTastic-
-UCI Bootcamp homework 6
+A simple app to search gifs utilizing a gif API
